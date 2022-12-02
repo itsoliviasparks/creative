@@ -240,8 +240,8 @@ html {
 }
 
 .section {
-  min-height: 75vh;
-  padding: 50px 0;
+  min-height: 55vh;
+  padding: 40px 0;
   border: solid 1px green;
 }
 
@@ -310,6 +310,11 @@ header {
   background-color: #efeff1;
 }
 
+header,
+header .wrapper {
+  z-index: 10;
+}
+
 .wrapper,
 header nav,
 header .header-links {
@@ -362,4 +367,61 @@ header nav a:hover, header nav a:focus {
 
 .hero-img img {
   max-width: 100%;
+}
+.hero-img::after {
+  content: " ";
+  width: 0.5px;
+  height: 150px;
+  background: #333333;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+}
+
+.branding-pros {
+  background-color: #C3DAB7;
+}
+.branding-pros .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 200px;
+}
+
+.image-words {
+  position: relative;
+}
+.image-words .words {
+  position: absolute;
+  top: -90px;
+  left: -105px;
+  z-index: 1;
+}
+
+.text-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.text-cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 35%;
+  padding: 30px;
+  text-align: center;
 }

@@ -1,0 +1,33 @@
+@use "var" as *;
+
+.branding-pros {
+    background-color: $light-sage;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 200px;
+    }
+}
+
+.image-words {
+    position: relative;
+    .words {
+        position: absolute;
+        top: -90px;
+        left: -105px;
+        z-index: 1;
+    }
+}
+
+.text-cards {
+    display: flex;
+    justify-content: center;
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        padding: 30px;
+        text-align: center;
+    }
+}

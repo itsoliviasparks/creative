@@ -9,6 +9,11 @@ header {
     background-color: #efeff1;
 }
 
+header,
+header .wrapper {
+    z-index: 10;
+}
+
 .wrapper,
 header nav,
 header .header-links {
@@ -52,5 +57,14 @@ header nav a {
 .hero-img {
     img {
         max-width: 100%;
+    }
+    &::after {
+        content: " ";
+        width: 0.5px;
+        height: 150px;
+        background: $black;
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
     }
 }
