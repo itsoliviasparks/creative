@@ -1,10 +1,12 @@
 @use "var" as *;
+
+// top navigation bar
 header {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    background-color: $white;
+    background-color: #efeff1;
 }
 
 .wrapper,
@@ -43,5 +45,12 @@ header nav a {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+// hero image
+.hero-img {
+    img {
+        max-width: 100%;
     }
 }

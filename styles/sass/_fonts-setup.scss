@@ -15,6 +15,12 @@ html {
     border: solid 1px black;
 }
 
+.section {
+    min-height: 75vh;
+    padding: 50px 0;
+    border: solid 1px green;
+}
+
 img{
     display: block;
     object-fit: cover;

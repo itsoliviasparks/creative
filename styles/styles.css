@@ -239,6 +239,12 @@ html {
   border: solid 1px black;
 }
 
+.section {
+  min-height: 75vh;
+  padding: 50px 0;
+  border: solid 1px green;
+}
+
 img {
   display: block;
   -o-object-fit: cover;
@@ -301,7 +307,7 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  background-color: #FFFFFF;
+  background-color: #efeff1;
 }
 
 .wrapper,
@@ -352,4 +358,8 @@ header nav a:hover, header nav a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.hero-img img {
+  max-width: 100%;
 }
