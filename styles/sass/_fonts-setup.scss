@@ -2,6 +2,7 @@
 // font-family: 'Montserrat', sans-serif; (Bold= 700)
 // font-family: 'Open Sans', sans-serif;
 
+// setups for base styles
 html {
     font-size: 62.5%;
     font-family: 'Open Sans', sans-serif;
@@ -17,8 +18,8 @@ html {
 
 .section {
     min-height: 55vh;
-    padding: 40px 0;
-    border: solid 1px green;
+    padding: 70px 0;
+    border: solid 1px hotpink;
 }
 
 img{
@@ -38,7 +39,7 @@ a {
     color: $black;
 }
 
-
+// fonts
 h1,
 h2,
 h3,
@@ -73,8 +74,20 @@ i {
     font-size: 2rem;
 }
 
+p {
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 2.4rem;
+    letter-spacing: 0.03rem;
+}
+
 // _header-nav section
 header nav a {
     font-size: 1.4rem;
     letter-spacing: 0.03rem;
+}
+
+// _testimonials section
+.testimonial-card {
+    font-style: italic;
 }
