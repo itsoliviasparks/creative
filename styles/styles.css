@@ -225,3 +225,123 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+  background-color: #FFFFFF;
+}
+
+.wrapper {
+  width: 70%;
+  max-width: 1800px;
+  margin: 0 auto;
+  border: solid 1px black;
+}
+
+img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+h1,
+h2,
+h3,
+header nav a {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3.7rem;
+  letter-spacing: 0.09rem;
+  font-weight: 700;
+}
+
+h2,
+h3,
+header nav a {
+  line-height: 2.4rem;
+  letter-spacing: 0.18rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+i {
+  font-size: 2rem;
+}
+
+header nav a {
+  font-size: 1.4rem;
+  letter-spacing: 0.03rem;
+}
+
+header,
+header nav,
+header .header-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav a {
+  padding: 10px;
+}
+header nav a:hover, header nav a:focus {
+  text-decoration: line-through;
+}
+
+.header-links button {
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.shopping-bag-icon {
+  position: relative;
+  padding: 10px;
+}
+.shopping-bag-icon .shopping-background {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  height: 17px;
+  width: 17px;
+  background-color: #C3DAB7;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}

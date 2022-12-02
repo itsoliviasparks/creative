@@ -1,0 +1,40 @@
+@use "var" as *;
+
+header,
+header nav,
+header .header-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    padding: 10px;
+    &:hover,
+    &:focus {
+        text-decoration: line-through;
+    }
+}
+
+.header-links button {
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.shopping-bag-icon {
+    position: relative;
+    padding: 10px;
+    .shopping-background {
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        height: 17px;
+        width: 17px;
+        background-color: $light-sage;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
