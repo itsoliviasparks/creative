@@ -19,12 +19,9 @@
         border: none;
         background-color: transparent;
         padding: 10px;
-        i {
-            font-size: 3rem;
-            &:hover,
-            &:focus {
-                opacity: 0.5;
+        i:hover,
+        i:focus {
+            opacity: 0.5;
             }
-        }
     }
 }

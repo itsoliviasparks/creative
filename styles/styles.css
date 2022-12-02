@@ -252,6 +252,7 @@ img {
 }
 
 ul {
+  margin: 0;
   padding: 0;
 }
 ul li {
@@ -293,8 +294,13 @@ h3 {
   font-size: 1rem;
 }
 
-i {
+i nav,
+.service i {
   font-size: 2rem;
+}
+
+button i {
+  font-size: 3rem;
 }
 
 p {
@@ -311,6 +317,12 @@ header nav a {
 
 .testimonial-card {
   font-style: italic;
+}
+
+.service-text h2,
+.service-text p {
+  text-align: left;
+  margin-top: 0;
 }
 
 header {
@@ -475,9 +487,66 @@ header nav a:hover, header nav a:focus {
   background-color: transparent;
   padding: 10px;
 }
-.testimonials button i {
-  font-size: 3rem;
-}
-.testimonials button i:hover, .testimonials button i:focus {
+.testimonials button i:hover,
+.testimonials button i:focus {
   opacity: 0.5;
+}
+
+.services {
+  background-image: url("../././assets/home-4.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 150px;
+}
+
+.services-offered {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(50% - 25px);
+  margin: 12px 0 12px 25px;
+}
+.service .circle {
+  height: 50px;
+  min-width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px;
+  border: solid 2px #333333;
+  border-radius: 50%;
+}
+.service .service-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }

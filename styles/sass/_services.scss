@@ -1,0 +1,36 @@
+@use "var" as *;
+
+.services {
+    background-image: url("../././assets/home-4.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    padding: 150px;
+}
+.services-offered {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.service {
+    display: flex;
+    width: calc(50% - 25px);
+    margin: 12px 0 12px 25px;
+    .circle {
+        height: 50px;
+        min-width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+        border: solid 2px $black;
+        border-radius: 50%;
+    }
+    .service-text {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: flex-start;
+    }
+}

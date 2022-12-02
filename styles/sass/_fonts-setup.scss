@@ -28,6 +28,7 @@ img{
 }
 
 ul {
+    margin: 0;
     padding: 0;
     li {
         list-style: none;
@@ -70,8 +71,13 @@ h3 {
     font-size: 1rem;
 }
 
-i {
+i nav,
+.service i  {
     font-size: 2rem;
+}
+
+button i {
+    font-size: 3rem;
 }
 
 p {
@@ -90,4 +96,11 @@ header nav a {
 // _testimonials section
 .testimonial-card {
     font-style: italic;
+}
+
+//_services section
+.service-text h2,
+.service-text p {
+    text-align: left;
+    margin-top: 0;
 }
