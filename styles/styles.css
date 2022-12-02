@@ -298,6 +298,7 @@ h2 span {
 
 h3 {
   font-size: 1rem;
+  font-weight: 700;
 }
 
 .fa-solid {
@@ -633,4 +634,42 @@ header nav a:hover, header nav a:focus {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.portfolio {
+  background-color: #C3DAB7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.portfolio .text,
+.portfolio img {
+  width: 50%;
+}
+
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.text p {
+  width: 65%;
+  padding: 30px;
+}
+.text a {
+  background-color: #FFFFFF;
+  padding: 0 25px;
+}
+.text a:hover, .text a:focus {
+  background-color: #F6F6F6;
 }
