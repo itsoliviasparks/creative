@@ -1,6 +1,13 @@
 @use "var" as *;
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: $white;
+}
 
-header,
+.wrapper,
 header nav,
 header .header-links {
     display: flex;

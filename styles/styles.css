@@ -296,7 +296,15 @@ header nav a {
   letter-spacing: 0.03rem;
 }
 
-header,
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #FFFFFF;
+}
+
+.wrapper,
 header nav,
 header .header-links {
   display: -webkit-box;
