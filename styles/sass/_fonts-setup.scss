@@ -1,11 +1,8 @@
 @use "var" as *;
-// font-family: 'Montserrat', sans-serif; (Bold= 700)
-// font-family: 'Open Sans', sans-serif;
 
-// setups for base styles
 html {
     font-size: 62.5%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $body-font;
     background-color: $white;
 }
 
@@ -27,7 +24,8 @@ img{
     object-fit: cover;
 }
 
-ul {
+ul,
+li {
     margin: 0;
     padding: 0;
     li {
@@ -45,7 +43,7 @@ h1,
 h2,
 h3,
 header nav a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $header-font;
     text-transform: uppercase
 }
 
@@ -65,18 +63,21 @@ header nav a {
 
 h2 {
     font-size: 1.8rem;
+    span {
+        display: block;
+        text-align: center;
+    }
 }
 
 h3 {
     font-size: 1rem;
 }
 
-i nav,
-.service i  {
+.fa-solid {
     font-size: 2rem;
 }
 
-button i {
+.testimonials .fa-solid {
     font-size: 3rem;
 }
 
@@ -99,8 +100,10 @@ header nav a {
 }
 
 //_services section
+// _our-team section
 .service-text h2,
-.service-text p {
+.service-text p,
+.rectangle p {
     text-align: left;
     margin-top: 0;
 }

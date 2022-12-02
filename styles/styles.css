@@ -251,11 +251,13 @@ img {
      object-fit: cover;
 }
 
-ul {
+ul,
+li {
   margin: 0;
   padding: 0;
 }
-ul li {
+ul li,
+li li {
   list-style: none;
 }
 
@@ -289,17 +291,20 @@ header nav a {
 h2 {
   font-size: 1.8rem;
 }
+h2 span {
+  display: block;
+  text-align: center;
+}
 
 h3 {
   font-size: 1rem;
 }
 
-i nav,
-.service i {
+.fa-solid {
   font-size: 2rem;
 }
 
-button i {
+.testimonials .fa-solid {
   font-size: 3rem;
 }
 
@@ -320,7 +325,8 @@ header nav a {
 }
 
 .service-text h2,
-.service-text p {
+.service-text p,
+.rectangle p {
   text-align: left;
   margin-top: 0;
 }
@@ -546,6 +552,84 @@ header nav a:hover, header nav a:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   justify-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.our-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+.our-team::before {
+  content: " ";
+  width: 0.5px;
+  height: 50px;
+  background: #333333;
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+
+.faces-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+}
+.faces-text li {
+  width: 23.5%;
+  margin: 15px 0;
+}
+.faces-text .rectangle {
+  width: 49%;
+}
+
+.face img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.team-text {
+  padding: 35px;
+}
+
+.square,
+.rectangle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.square {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rectangle {
+  background-color: #F6F6F6;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;

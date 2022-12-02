@@ -1,0 +1,57 @@
+@use "var" as *;
+
+.our-team {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &::before {
+        content: " ";
+        width: 0.5px;
+        height: 50px;
+        background: $black;
+        position: absolute;
+        left: 50%;
+        top: 0;
+    }
+}
+
+.faces-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+    li {
+        width: 23.5%;
+        margin: 15px 0;
+    }
+    .rectangle {
+        width: 49%;
+    }
+}
+
+.face img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+// text cards
+.team-text {
+    padding: 35px;
+}
+
+.square,
+.rectangle {
+    display: flex;
+    flex-direction: column;
+}
+
+.square {
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle {
+    background-color: $off-white;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
