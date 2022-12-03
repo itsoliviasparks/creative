@@ -6,7 +6,7 @@ header {
     top: 0;
     right: 0;
     left: 0;
-    background-color: #efeff1;
+    background-color: $header-white;
 }
 
 header,
@@ -24,10 +24,6 @@ header .header-links {
 
 header nav a {
     padding: 10px;
-    &:hover,
-    &:focus {
-        text-decoration: line-through;
-    }
 }
 
 .header-links button {
@@ -55,8 +51,11 @@ header nav a {
 
 // hero image
 .hero-img {
+    width: 100%;
+    background-color: $header-white;
     img {
         max-width: 100%;
+        margin: 0 auto;
     }
     &::after {
         content: " ";

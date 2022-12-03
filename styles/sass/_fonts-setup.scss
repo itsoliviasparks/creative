@@ -4,19 +4,18 @@ html {
     font-size: 62.5%;
     font-family: $body-font;
     background-color: $white;
+    color: $black;
 }
 
 .wrapper {
     width: 70%;
     max-width: 1800px;
     margin: 0 auto;
-    border: solid 1px black;
 }
 
 .section {
     min-height: 55vh;
     padding: 70px 0;
-    border: solid 1px hotpink;
 }
 
 img{
@@ -36,6 +35,10 @@ li {
 a {
     text-decoration: none;
     color: $black;
+    &:hover,
+    &:focus {
+        text-decoration: line-through;
+    }
 }
 
 // fonts
@@ -70,8 +73,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 .fa-solid {
@@ -82,7 +84,9 @@ h3 {
     font-size: 3rem;
 }
 
-p {
+p,
+footer a,
+footer p {
     font-size: 1.4rem;
     text-align: center;
     line-height: 2.4rem;
@@ -107,4 +111,22 @@ header nav a {
 .rectangle p {
     text-align: left;
     margin-top: 0;
+}
+
+// _footer section
+footer {
+    h3,
+    a,
+    p {
+        color: $off-white;
+        text-align: left;
+        font-weight: 300;
+        font-style: normal;
+    }
+    p {
+        margin: 0;
+    }
+    a {
+        display: block;
+    }
 }
