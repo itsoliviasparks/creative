@@ -53,17 +53,18 @@ header nav a {
 .hero-img {
     width: 100%;
     background-color: $header-white;
+    position: relative;
     img {
         max-width: 100%;
         margin: 0 auto;
     }
     &::after {
         content: " ";
-        width: 0.5px;
+        width: 1px;
         height: 150px;
         background: $black;
         position: absolute;
         left: 50%;
-        bottom: 10px;
+        bottom: -75px;
     }
 }

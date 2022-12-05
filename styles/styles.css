@@ -413,6 +413,7 @@ header nav a {
 .hero-img {
   width: 100%;
   background-color: #eeeef0;
+  position: relative;
 }
 .hero-img img {
   max-width: 100%;
@@ -420,12 +421,12 @@ header nav a {
 }
 .hero-img::after {
   content: " ";
-  width: 0.5px;
+  width: 1px;
   height: 150px;
   background: #333333;
   position: absolute;
   left: 50%;
-  bottom: 10px;
+  bottom: -75px;
 }
 
 .branding-pros {
@@ -590,7 +591,7 @@ header nav a {
 }
 .our-team::before {
   content: " ";
-  width: 0.5px;
+  width: 1px;
   height: 50px;
   background: #333333;
   position: absolute;
@@ -727,7 +728,7 @@ footer .socials {
           justify-content: space-between;
   padding-top: 15px;
 }
-footer .blog {
+footer .blog-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -739,13 +740,13 @@ footer .blog {
       -ms-flex-pack: center;
           justify-content: center;
 }
-footer .blog h3 {
+footer .blog-links h3 {
   text-align: center;
 }
-footer .blog ul {
+footer .blog-links ul {
   padding-left: 20px;
 }
-footer .blog li {
+footer .blog-links li {
   color: #F6F6F6;
   list-style-type: disc;
   list-style-position: outside;
