@@ -1,0 +1,29 @@
+@use "var" as *;
+
+.portfolio {
+    background-color: $light-sage;
+    display: flex;
+    .text,
+    img {
+        width: 50%;
+    }
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+        width: 65%;
+        padding: 30px;
+    }
+    a {
+        background-color: $white;
+        padding: 0 25px;
+        &:hover,
+        &:focus {
+            background-color: $off-white;
+        }
+    }
+}

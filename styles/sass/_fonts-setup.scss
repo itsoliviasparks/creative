@@ -1,0 +1,132 @@
+@use "var" as *;
+
+html {
+    font-size: 62.5%;
+    font-family: $body-font;
+    background-color: $white;
+    color: $black;
+}
+
+.wrapper {
+    width: 70%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.section {
+    min-height: 55vh;
+    padding: 70px 0;
+}
+
+img{
+    display: block;
+    object-fit: cover;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+    &:hover,
+    &:focus {
+        text-decoration: line-through;
+    }
+}
+
+// fonts
+h1,
+h2,
+h3,
+header nav a {
+    font-family: $header-font;
+    text-transform: uppercase
+}
+
+h1 {
+    font-size: 3.7rem;
+    letter-spacing: .09rem;
+    font-weight: 700;
+}
+
+h2,
+h3,
+header nav a {
+    line-height: 2.4rem;
+    letter-spacing: 0.18rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.8rem;
+    span {
+        display: block;
+        text-align: center;
+    }
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.fa-solid {
+    font-size: 2rem;
+}
+
+.testimonials .fa-solid {
+    font-size: 3rem;
+}
+
+p,
+footer a,
+footer p {
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 2.4rem;
+    letter-spacing: 0.03rem;
+}
+
+// _header-nav section
+header nav a {
+    font-size: 1.4rem;
+    letter-spacing: 0.03rem;
+}
+
+// _testimonials section
+.testimonial-card {
+    font-style: italic;
+}
+
+//_services section
+// _our-team section
+.service-text h2,
+.service-text p,
+.rectangle p {
+    text-align: left;
+    margin-top: 0;
+}
+
+// _footer section
+footer {
+    h3,
+    a,
+    p {
+        color: $off-white;
+        text-align: left;
+        font-weight: 300;
+        font-style: normal;
+    }
+    p {
+        margin: 0;
+    }
+    a {
+        display: block;
+    }
+}

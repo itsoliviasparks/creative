@@ -1,0 +1,70 @@
+@use "var" as *;
+
+// top navigation bar
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: $header-white;
+}
+
+header,
+header .wrapper {
+    z-index: 1;
+}
+
+.wrapper,
+header nav,
+header .header-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    padding: 10px;
+}
+
+.header-links button {
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.shopping-bag-icon {
+    position: relative;
+    padding: 10px;
+    .shopping-background {
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        height: 17px;
+        width: 17px;
+        background-color: $light-sage;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+// hero image
+.hero-img {
+    width: 100%;
+    background-color: $header-white;
+    position: relative;
+    img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    &::after {
+        content: " ";
+        width: 1px;
+        height: 150px;
+        background: $black;
+        position: absolute;
+        left: 50%;
+        bottom: -75px;
+    }
+}

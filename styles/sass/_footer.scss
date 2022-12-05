@@ -1,0 +1,76 @@
+@use "var" as *;
+
+footer {
+    background-color: $black;
+    .section {
+        min-height: 30vh;
+    }
+    .footer-main {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .contact,
+    .blog,
+    .widget {
+        width: 33%;
+    }
+    .socials {
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 15px;
+    }
+    .blog-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h3 {
+            text-align: center;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            color: $off-white;
+            list-style-type: disc;
+            list-style-position: outside;
+            padding: 5px 0;
+        }
+    }
+    .widget {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        h3 {
+            text-align: right;
+        }
+        .email-button {
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+        }
+        input {
+            height: 35px;
+            width: 100%;
+            border: none;
+            background-color: $off-white;
+            color: $grey;
+            padding: 0 30px;
+        }
+        button {
+            height: 35px;
+            width: 35px;
+            border: none;
+            background-color: $light-sage;
+            padding: 0;
+        }
+    }
+}
+
+.footnote {
+    border-top: 0.5px solid $grey;
+    padding: 35px 0;
+    margin: 0;
+    text-align: center;
+}
