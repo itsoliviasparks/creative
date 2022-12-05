@@ -2,11 +2,10 @@
 
 // top navigation bar
 header {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     left: 0;
-    background-color: $header-white;
 }
 
 header,

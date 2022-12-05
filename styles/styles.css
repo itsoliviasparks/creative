@@ -351,11 +351,10 @@ footer a {
 }
 
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
-  background-color: #eeeef0;
 }
 
 header,
