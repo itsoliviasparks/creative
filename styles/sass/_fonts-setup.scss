@@ -41,6 +41,15 @@ a {
     }
 }
 
+.socials i:hover,
+.socials i:focus,
+.search-icon i:hover,
+.search-icon i:focus,
+.shopping-bag-icon i:hover,
+.shopping-bag-icon i:focus {
+    color: $light-sage;
+}
+
 // fonts
 h1,
 h2,
@@ -51,6 +60,10 @@ header nav a {
 }
 
 h1 {
+    font-size: 3rem;
+}
+
+h2.title {
     font-size: 3.7rem;
     letter-spacing: .09rem;
     font-weight: 700;
@@ -102,15 +115,26 @@ header nav a {
 // _testimonials section
 .testimonial-card {
     font-style: italic;
+    color: $grey;
 }
 
-//_services section
-// _our-team section
+//_services & _our-team sections
 .service-text h2,
 .service-text p,
 .rectangle p {
     text-align: left;
     margin-top: 0;
+}
+
+.square h2 {
+    color: $black;
+    text-align: center;
+}
+
+.service-text p,
+.team-text,
+.text p {
+    color: $grey;
 }
 
 // _footer section
@@ -128,5 +152,74 @@ footer {
     }
     a {
         display: block;
+    }
+}
+
+.email-button i:hover,
+.email-button i:focus {
+    color: $grey;
+}
+
+//_blog fonts
+.blog-path a,
+.blog-path p {
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 2.4rem;
+    letter-spacing: 0.03rem;
+    margin: 0;
+    color: $grey;
+}
+
+.blog-path a:hover,
+.blog-path a:focus {
+    color: $black;
+    text-decoration: none;
+}
+
+.blog p {
+    color: $grey;
+    text-align: left;
+    em {
+        font-weight: 700;
+        font-style: normal;
+        color: $black;
+    }
+}
+
+.comment {
+    button {
+        background-color: transparent;
+        color: $grey;
+        border: none;
+        font-family: $header-font;
+        font-size: 1.2rem;
+        font-style: italic;
+        &:hover,
+        &:focus {
+            text-decoration: line-through;
+        }
+    }
+    p {
+        text-align: left;
+        color: $grey;
+    }
+    .time-stamp{
+        font-family: $header-font;
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+
+input,
+textarea,
+fieldset button {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.03rem;
+    color: $grey;
+    &:hover,
+    &:focus {
+        color: $black;
     }
 }

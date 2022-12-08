@@ -51,19 +51,19 @@ header nav a {
 // hero image
 .hero-img {
     width: 100%;
-    background-color: $header-white;
     position: relative;
     img {
         max-width: 100%;
         margin: 0 auto;
     }
-    &::after {
-        content: " ";
-        width: 1px;
-        height: 150px;
-        background: $black;
-        position: absolute;
-        left: 50%;
-        bottom: -75px;
-    }
+}
+
+.after-line::after {
+    content: " ";
+    width: 1px;
+    height: 150px;
+    background: $black;
+    position: absolute;
+    left: 50%;
+    bottom: -75px;
 }
