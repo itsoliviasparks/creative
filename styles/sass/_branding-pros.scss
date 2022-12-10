@@ -1,12 +1,12 @@
 @use "var" as *;
 
-.branding-pros {
+section.branding-pros {
     background-color: $light-sage;
     .wrapper {
+        padding-top: 200px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-top: 200px;
     }
 }
 
@@ -14,9 +14,9 @@
     position: relative;
     .words {
         position: absolute;
+        z-index: 0;
         top: -90px;
         left: -105px;
-        z-index: 0;
     }
 }
 

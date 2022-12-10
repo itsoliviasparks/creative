@@ -1,8 +1,8 @@
 @use "var" as *;
 
-.portfolio {
-    background-color: $light-sage;
+section.portfolio {
     display: flex;
+    background-color: $light-sage;
     .text,
     img {
         width: 50%;
@@ -17,13 +17,5 @@
     p {
         width: 65%;
         padding: 30px;
-    }
-    a {
-        background-color: $white;
-        padding: 0 25px;
-        &:hover,
-        &:focus {
-            background-color: $off-white;
-        }
     }
 }

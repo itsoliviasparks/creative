@@ -26,9 +26,9 @@ header nav a {
 }
 
 .header-links button {
-    border: none;
-    background-color: transparent;
     padding: 10px;
+    background-color: transparent;
+    border: none;
 }
 
 .shopping-bag-icon {
@@ -36,34 +36,33 @@ header nav a {
     padding: 10px;
     .shopping-background {
         position: absolute;
-        bottom: 0px;
-        right: 0;
-        height: 17px;
-        width: 17px;
-        background-color: $light-sage;
-        border-radius: 50%;
+        bottom: 5px;
+        right: 5px;
+        height: 12px;
+        width: 12px;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: $light-sage;
+        border-radius: 50%;
     }
 }
 
 // hero image
-.hero-img {
-    width: 100%;
+section.hero-img {
     position: relative;
+    width: 100%;
     img {
         max-width: 100%;
         margin: 0 auto;
     }
-}
-
-.after-line::after {
-    content: " ";
-    width: 1px;
-    height: 150px;
-    background: $black;
-    position: absolute;
-    left: 50%;
-    bottom: -75px;
+    &.after::after {
+        content: " ";
+        position: absolute;
+        left: 50%;
+        bottom: -75px;
+        height: 150px;
+        width: 1px;
+        background: $black;
+    }
 }

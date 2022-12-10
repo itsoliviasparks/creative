@@ -1,57 +1,52 @@
 @use "var" as *;
 
-.our-team {
+section.our-team {
+    position: relative;
     display: flex;
     flex-direction: column;
-    position: relative;
     &::before {
         content: " ";
-        width: 1px;
-        height: 50px;
-        background: $black;
         position: absolute;
-        left: 50%;
         top: 0;
+        left: 50%;
+        height: 50px;
+        width: 1px;
+        background: $black;
     }
 }
 
-.faces-text {
+.team-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 50px;
-    li {
+    .card {
         width: 23.5%;
         margin: 15px 0;
+        img {
+            width: 100%;
+            aspect-ratio: 1/1;
+        }
     }
     .rectangle {
         width: 49%;
     }
 }
 
-.face img {
-    width: 100%;
-    aspect-ratio: 1/1;
-}
-
 // text cards
-.team-text {
-    padding: 35px;
-}
-
-.square,
-.rectangle {
+.text-card {
     display: flex;
     flex-direction: column;
+    margin: 15px 0;
+    padding: 10px 30px;
+}
+
+.rectangle {
+    justify-content: flex-end;
+    background-color: $off-white;
 }
 
 .square {
     justify-content: center;
     align-items: center;
-}
-
-.rectangle {
-    background-color: $off-white;
-    justify-content: flex-end;
-    align-items: flex-start;
 }

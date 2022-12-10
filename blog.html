@@ -16,15 +16,15 @@
 	<header>
 		<div class="wrapper">
 			<nav>
-				<a href="#">Home</a>
-				<a href="#">Blog</a>
-				<a href="#portfolio">Portfolio</a>
+				<a href="./index.html">Home</a>
+				<a href="./blog.html">Blog</a>
+				<a href="./index.html#portfolio">Portfolio</a>
 			</nav>
 			<h1>Creative</h1>
 			<div class="header-links">
 				<nav>
 					<a href="#">Shop</a>
-					<a href="#contact">Contact</a>
+					<a href="./contact">Contact</a>
 				</nav>
 				<button class="search-icon">
 					<i class="fa-solid fa-magnifying-glass"></i>
@@ -39,16 +39,16 @@
 		</div>
 	</header>
 	<main>
-		<section class="hero-img">
+		<section class="hero-img fullbleed">
 			<img src="./assets/blog-1.jpeg" alt="Desktop Mac with black screen on a white desk with miscellaneous other apple products & a plant">
 		</section>
-		<!-- blog header section -->
-		<section class="blog wrapper section">
-			<h2 class="title">How to Run a Creative Agency</h2>
+<!-- blog post section -->
+		<section class="blog wrapper">
+			<h2>How to Run a Creative Agency</h2>
 			<nav class="blog-path">
 				<ul>
 					<li>
-						<a href="#">
+						<a href="./index.html">
 							<p>Home</p>
 						</a>
 					</li>
@@ -56,7 +56,7 @@
 						<p>/</p>
 					</li>
 					<li>
-						<a href="#">
+						<a href="./blog.html">
 							<p>Blog</p>
 						</a>
 					</li>
@@ -71,13 +71,15 @@
 				</ul>
 			</nav>
 			<header class="post-header underline">
-				<a href="#" class="author">
-					<img src="./assets/blog-2.jpeg" alt="Team member's name">
+				<div class="author">
+					<a href="#" class="author-photo">
+						<img src="./assets/blog-2.jpeg" alt="Team member's name">
+					</a>
 					<div class="author-name">
 						<h3>Alex</h3>
 						<p>Administrator</p>
 					</div>
-				</a>
+				</div>
 				<ul class="post-info">
 					<li>
 						<h3>Date</h3>
@@ -109,50 +111,58 @@
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis modi veritatis facilis velit vel est corporis adipisci quam magnam, libero neque ex eaque vitae, expedita odit fuga dicta cumque perspiciatis ipsum inventore! Itaque, optio voluptate quisquam cupiditate id harum officia? Rem ipsam nam suscipit necessitatibus adipisci voluptatum corporis consectetur, animi atque soluta quam, vel non, doloribus officia repellat. Aliquam dicta cumque ipsa debitis blanditiis modi, quia commodi fugit reiciendis adipisci incidunt recusandae ipsum quaerat! Quaerat quo aspernatur quasi odio laboriosam?
 					</p>
 				</article>
-				<footer class="post-header">
+				<footer class="post-footer">
 					<nav class="socials">
 						<h3>Share:</h3>
-						<a href="https://www.facebook.com">
-							<i class="fa-brands fa-facebook-f"></i>
-						</a>
-						<a href="https://www.twitter.com">
-							<i class="fa-brands fa-twitter"></i>
-						</a>
-						<a href="https://www.instagram.com">
-							<i class="fa-brands fa-instagram"></i>
-						</a>
+						<ul>
+							<li>
+								<a href="https://www.facebook.com">
+									<i class="fa-brands fa-facebook-f"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.twitter.com">
+									<i class="fa-brands fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com">
+									<i class="fa-brands fa-instagram"></i>
+								</a>
+							</li>
+						</ul>
 					</nav>
 				</footer>
 			</nav>
 		</section>
-		<!-- _blog-related section -->
-		<section class="related wrapper section">
-			<h2 class="title underline">Related Posts</h2>
+<!-- related posts section -->
+		<section class="related wrapper">
+			<h2 class="underline">Related Posts</h2>
 			<ul class="related-posts">
 				<li class="post">
 					<a href="#">
 						<img src="./assets/blog-3.jpeg" alt="Vintage lamp, plants, and a macbook pro">
-						<h3>July, 25, 2018</h3>
+						<h4>July, 25, 2018</h4>
 					</a>
 				</li>
 				<li class="post">
 					<a href="#">
 						<img src="./assets/blog-4.jpeg" alt="Plant, candles, and letter A on a desk">
-						<h3>July, 25, 2018</h3>
+						<h4>July, 25, 2018</h4>
 					</a>
 				</li>
 				<li class="post">
 					<a href="#">
 						<img src="./assets/blog-5.jpeg" alt="Toplay of an iPhone, Macbook, succlent, and coffee">
-						<h3>July, 25, 2018</h3>
+						<h4>July, 25, 2018</h4>
 					</a>
 				</li>
 			</ul>
 		</section>
-		<!-- _comment section -->
-		<section class="comment wrapper section">
-			<h2 class="title underline">02 Comments</h2>
-			<ul>
+<!-- _comment section -->
+		<section class="comments wrapper">
+			<h2 class="underline">02 Comments</h2>
+			<ul class="comment-list">
 				<li class="comment-card">
 					<a href="#">
 						<img src="./assets/blog-6.jpeg" alt="Daniel Candaft">
@@ -160,7 +170,7 @@
 					<div class="comment">
 						<div class="name">
 							<h3>Daniel Candaft</h3>
-							<button> - Reply</button>
+							<button class="reply"> - Reply</button>
 						</div>
 						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores ad facere cupiditate harum. Eligendi blanditiis vero alias aliquam odit facere!</p>
 						<p class="time-stamp">July 17, 2015 at 15 hours ago</p>
@@ -173,7 +183,7 @@
 					<div class="comment">
 						<div class="name">
 							<h3>Jenifer Loopz</h3>
-							<button> - Reply</button>
+							<button class="reply"> - Reply</button>
 						</div>
 						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores ad facere cupiditate harum. Eligendi blanditiis vero alias aliquam odit facere!</p>
 						<p class="time-stamp">July 17, 2015 at 15 hours ago</p>
@@ -181,31 +191,33 @@
 				</li>
 			</ul>
 		</section>
-		<!-- _leave-comment section -->
-		<section class=" comment-form wrapper section">
-			<h2 class="title underline">Leave a Comment</h2>
+<!-- _leave-comment section -->
+		<section class="comment-form wrapper">
+			<h2 class="underline">Leave a Comment</h2>
 			<form action="#" method="#" class="myForm" name="myForm">
 				<fieldset class="name-subject">
 					<label for="user-name" class="sr-only">Name</label>
 					<input type="text" id="user-name" name="user-name" placeholder= "Enter your name..." required>
 					<label for="user-eamil" class="sr-only">Email Address</label>
-					<input type="email" id="user-email" name="user-email" placeholder="youremail@gomain.com" required>
+					<input type="email" id="user-email" name="user-email" placeholder="youremail@domain.com" required>
 					<label for="user-subject" class="sr-only">Subject (Optional)</label>
 					<input type="text" id="user-subject" name="user-subject" placeholder="Subject (Optional)">
 				</fieldset>
 				<fieldset class="text-box">
 					<label for="comment" class="sr-only">Leave your comment</label>
 					<textarea id="user-comment" name="user-comment" placeholder="Here goes your comment" required></textarea>
-					<button type="submit"> <h3>Submit Comment</h3></button>
 				</fieldset>
+				<button type="submit">Submit Comment</button>
 			</form>
 		</section>
     </main>
-	<!-- _footer section -->
+<!-- _footer section -->
 	<footer>
-		<div class="footer-main wrapper section">
+		<section class="footer-main wrapper">
 			<div class="contact">
-				<h3>Contact Us</h3>
+				<a href="./contact">
+					<h4>Contact Us</h4>
+				</a>
 				<address>
 					<p>6591 Orchard Street, NY 100002, United States</p>
 					<a href="mailto:contact@onepro.co">Email: contact@onepro.co</a>
@@ -214,19 +226,21 @@
 					<a href="fax:0096435643989">Fax: +00 (9) 643 6543 989</a>
 				</address>
 				<nav class="socials">
-					<a href="https://www.facebook.com">
+					<a href="https://www.facebook.com" target=”_blank”>
 						<i class="fa-brands fa-facebook-f"></i>
 					</a>
-					<a href="https://www.twitter.com">
+					<a href="https://www.twitter.com" target=”_blank”>
 						<i class="fa-brands fa-twitter"></i>
 					</a>
-					<a href="https://www.instagram.com">
+					<a href="https://www.instagram.com" target=”_blank”>
 						<i class="fa-brands fa-instagram"></i>
 					</a>
 				</nav>
 			</div>
 			<div class="blog-links">
-				<h3>Recent Posts</h3>
+				<a href="./blog.html">
+					<h4>Recent Posts</h4>
+				</a>
 				<ul>
 					<li>
 						<a href="#">Conversion hackathon partner</a>
@@ -246,18 +260,22 @@
 				</ul>
 			</div>
 			<div class="widget">
+				<h4>Twitter Widget</h4>
 				<form action="#" method="#"	class="form" name="form">
-					<h3>Twitter Widget</h3>
 					<p>Signup for emails and notifications below.</p>
 					</label>
 					<div class="email-button">
 						<input type="email" id="email" name="email" placeholder="Enter your email">
-						<button type="submit"><i class="fa-sharp fa-solid fa-right-long"></i></button>
+						<button type="submit" class="widget"><i class="fa-sharp fa-solid fa-right-long"></i></button>
 					</div>
 				</form>
 			</div>
-		</div>
-		<h3 class="footnote">Creative Agency</h3>
+		</section>
+		<section class="footnote">
+			<a href="./index.html">
+				<h4>Creative Agency</h4>
+			</a>
+		</section>
 	</footer>
 </body>
 </html>
