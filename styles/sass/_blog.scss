@@ -1,0 +1,163 @@
+@use "var" as *;
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.underline {
+    width: 100%;
+    border-bottom: solid 1px $grey;
+    padding-bottom: 25px;
+    margin-bottom: 55px;
+}
+
+//blog post section
+.blog-path ul {
+    display: flex;
+    flex-direction: row;
+    li {
+        padding: 0 2px;
+    }
+}
+
+.post-header {
+position: relative;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 50px 0;
+padding: 0 0 15px 0;
+}
+
+
+.author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        border-radius: 50%;
+        margin: 15px;
+    }
+}
+
+.post-info {
+    display: flex;
+    justify-content: space-between;
+    li {
+        padding: 0 30px;
+    }
+}
+
+.post-footer .socials {
+    padding-top: 15px;
+    display: flex;
+    background-color: $white;
+    ul {
+        display: flex;
+        li {
+            padding: 0 10px;
+        }
+    }
+}
+
+
+//related posts section
+.related { flex-direction: column; }
+
+.related-posts {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .post {
+        width: 32%;
+        img {
+            width: 100%;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+//comment section
+section.comments {
+    display: flex;
+    flex-direction: column;
+    .comment-list {
+        width: 100%;
+    }
+}
+
+.comment-card {
+    display: flex;
+    justify-content: flex-start;
+    .comment {
+        width: 100%;
+        background-color: $off-white;
+        padding: 20px 30px;
+        margin: 0 0 20px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: -15px;
+            width: 0;
+            height: 0;
+            border-right: solid 20px $off-white;
+            border-top: solid 8px transparent;
+            border-bottom: solid 8px transparent;
+        }
+        .name {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+
+
+//comment-form section
+section.comment-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+    fieldset {
+        border: none;
+        margin: 0;
+        padding: 0 0 40px 0;
+    }
+    form {
+        width: 100%;
+        input,
+        textarea {
+            border: none;
+            border-bottom: 1px solid $grey;
+            transition: 0.3s;
+            &:hover,
+            &:focus {
+                border-color: $black;
+            }
+        }
+    }
+}
+
+.name-subject {
+    display: flex;
+    justify-content: space-between;
+    input {
+        width: 32%;
+        height: 35px;
+    }
+}
+
+.text-box {
+    textarea {
+        width: 100%;
+        height: 175px;
+        resize: none;
+    }
+}

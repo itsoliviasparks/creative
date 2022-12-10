@@ -1,10 +1,9 @@
 @use "var" as *;
 
+// general styles
 html {
-    font-size: 62.5%;
-    font-family: $body-font;
     background-color: $white;
-    color: $black;
+    font-size: 62.5%;
 }
 
 .wrapper {
@@ -13,9 +12,12 @@ html {
     margin: 0 auto;
 }
 
-.section {
+section {
     min-height: 55vh;
     padding: 70px 0;
+    &.fullbleed {
+        padding: 0;
+    }
 }
 
 img{
@@ -27,106 +29,256 @@ ul,
 li {
     margin: 0;
     padding: 0;
-    li {
-        list-style: none;
-    }
+    list-style: none;
 }
 
-a {
-    text-decoration: none;
-    color: $black;
-    &:hover,
-    &:focus {
-        text-decoration: line-through;
-    }
-}
-
-// fonts
+// header fonts
 h1,
 h2,
 h3,
-header nav a {
+h4,
+a,
+button {
     font-family: $header-font;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
-h1 {
+h1 { font-size: 3rem; }
+
+h2 {
+    margin: 0;
     font-size: 3.7rem;
     letter-spacing: .09rem;
     font-weight: 700;
 }
 
-h2,
-h3,
-header nav a {
-    line-height: 2.4rem;
-    letter-spacing: 0.18rem;
-    font-weight: 400;
-}
-
-h2 {
+h3 {
+    margin: 0;
     font-size: 1.8rem;
+    line-height: 2.4rem;
+    letter-spacing: 1.8px;
+    font-weight: 300;
     span {
         display: block;
         text-align: center;
     }
 }
 
-h3 {
+h4 {
+    margin: 0 0 30px 0;
+    color: $off-white;
     font-size: 1.5rem;
+    font-weight: 300;
 }
 
-.fa-solid {
-    font-size: 2rem;
+.post h4 {
+    color: $black;
 }
 
-.testimonials .fa-solid {
-    font-size: 3rem;
-}
-
+//home fonts
 p,
 footer a,
-footer p {
+input,
+textarea {
+    color: $black;
+    font-family: $body-font;
     font-size: 1.4rem;
-    text-align: center;
     line-height: 2.4rem;
     letter-spacing: 0.03rem;
+    text-align: center;
 }
 
-// _header-nav section
-header nav a {
-    font-size: 1.4rem;
-    letter-spacing: 0.03rem;
-}
-
-// _testimonials section
-.testimonial-card {
-    font-style: italic;
-}
-
-//_services section
-// _our-team section
-.service-text h2,
+.testimonial-card p,
 .service-text p,
-.rectangle p {
-    text-align: left;
-    margin-top: 0;
+.our-team p,
+.portfolio p {
+    color: $grey;
 }
 
-// _footer section
-footer {
-    h3,
-    a,
-    p {
-        color: $off-white;
-        text-align: left;
-        font-weight: 300;
+.testimonial-card p { font-style: italic; }
+
+.service-text p,
+.our-team p {
+    text-align: left;
+}
+
+//blog fonts
+.post-header p {
+    margin: 0;
+    text-transform: none;
+}
+
+.blog p,
+article p {
+    color: $grey;
+    text-align: left;
+    em {
+        color: $black;
         font-style: normal;
+        font-weight: 700;
+    }
+}
+
+.comment p {
+    text-align: left;
+    &.time-stamp {
+        color: $grey;
+        font-size: 1rem;
+    }
+}
+
+input,
+textarea {
+    color: $grey;
+    text-align: left;
+    transition: 0.3s;
+    &::placeholder {
+        opacity: 1;
+    }
+    &:hover,
+    &:focus {
+        color: $black;
+    }
+}
+
+
+//footer
+footer p,
+address {
+    color: $off-white;
+    font-style: normal;
+    text-align: left;
+}
+
+// links & buttons
+a {
+    color: $black;
+    line-height: 1.4rem;
+    letter-spacing: 0.03rem;
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover,
+    &:focus {
+        text-decoration: line-through;
+    }
+}
+
+a img {
+   transition: 0.3s;
+   &:hover,
+   &:focus {
+       opacity: 0.5;
+   }
+}
+
+.blog-path li {
+    transition: 0.3s;
+    p {
+        color: $grey;
+        text-transform: none;
+    }
+    a:hover,
+    a:focus {
+        text-decoration: none;
+        p {
+            color: $black;
+        }
+    }
+}
+
+footer a {
+    color: $off-white;
+    text-transform: none;
+}
+
+button {
+    margin: 15;
+    padding: 15px 25px;
+    background-color: $white;
+    border: none;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.07rem;
+    font-weight: 700;
+    transition: 0.3s;
+    &:hover,
+    &:focus {
+        background-color: $off-white;
+    }
+}
+
+button.reply {
+    padding: 0;
+    background-color: transparent;
+    text-transform: none;
+    font-style: italic;
+    font-weight: 300;
+    transition: 0.3s;
+    &:hover,
+    &:focus {
+        color: $grey;
+    }
+}
+
+button[type=submit] {
+    padding: 0 0 5px 0;
+    background-color: transparent;
+    color: $grey;
+    border-bottom: 1px solid $grey;
+    font-weight: 300;
+    &:hover,
+    &:focus {
+        color: $black;
+        border-color: $black;
+    }
+}
+
+button[type=submit].widget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    margin: 0;
+    padding: 0;
+    background-color: $light-sage;
+    border: none;
+    color: $black;
+    transition: 0.3s;
+    &:hover,
+    &:focus {
+        background-color: $light-sage;
+        i {
+            color: $grey
+            }
+        }
+}
+
+//icon fonts
+i { font-size: 1.4rem; }
+
+.testimonials i { font-size: 3rem; }
+
+.circle i { font-size: 2.2rem; }
+
+.search-icon,
+.shopping-bag-icon,
+.socials i {
+    transition: 0.3s;
+    &:hover,
+    &:focus {
+        color: $light-sage;
     }
     p {
-        margin: 0;
+        font-size: 0.8rem;
     }
-    a {
-        display: block;
+}
+
+.post-footer .socials i {
+    color: $black;
+    transition: 0.3s;
+    &:hover,
+    &:focus {
+        color: $grey;
     }
 }
