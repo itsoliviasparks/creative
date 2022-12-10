@@ -1,0 +1,61 @@
+@use "var" as *;
+header.relative {
+    position: relative;
+    background-color: $white;
+}
+
+section.hero-img {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    h2 {
+        position: absolute;
+        bottom: -30px;
+        z-index: 5;
+        &::before {
+            content: " ";
+            position: absolute;
+            top: -30px;
+            height: 2px;
+            width: 30px;
+            background: $black;
+        }
+    }
+}
+
+section.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.contact-methods {
+    display: flex;
+    margin: 70px auto 0 auto;
+    li {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 35px 70px;
+        &:nth-child(2){
+            border-right: solid 1px $grey;
+            border-left: solid 1px $grey;
+        }
+    }
+    address {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+section.message-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 70px;
+    form {
+        margin-top: 70px;
+    }
+}
