@@ -1,4 +1,6 @@
 @use "var" as *;
+
+//_contact page
 header.relative {
     position: relative;
     background-color: $white;
@@ -10,12 +12,12 @@ section.hero-img {
     flex-direction: column;
     h2 {
         position: absolute;
-        bottom: -30px;
         z-index: 5;
+        bottom: -30px;
         &::before {
             content: " ";
             position: absolute;
-            top: -30px;
+            top: -20px;
             height: 2px;
             width: 30px;
             background: $black;
@@ -23,13 +25,13 @@ section.hero-img {
     }
 }
 
+//contact-details section
 section.contact-details {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
 }
-
 
 .contact-methods {
     display: flex;
@@ -50,6 +52,7 @@ section.contact-details {
     }
 }
 
+//contact-form
 section.message-form {
     display: flex;
     flex-direction: column;
