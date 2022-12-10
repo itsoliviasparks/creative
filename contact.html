@@ -13,7 +13,7 @@
 </head>
 <body>
 <!-- _header-nav section -->
-	<header>
+	<header class="relative">
 		<div class="wrapper">
 			<nav>
 				<a href="./index.html">Home</a>
@@ -41,24 +41,78 @@
 	<main>
 		<section class="hero-img fullbleed">
 			<img src="./assets/contact-1.jpeg" alt="Cropped flatlay of a macbook keyboard and cactus">
+            <div class="wrapper">
+                <h2>Contact<span>Us</span></h2>
+            </div>
 		</section>
-<!-- blog post section -->
-
-
+<!-- contact details section -->
+        <section class="contact-details wrapper">
+            <h3>Contact Details</h3>
+            <p>If you need any help, please contact us or send us an email or go to our forum.</p>
+            <p>We are sure that you can receive our reply as soon as possible.</p>
+            <ul class="contact-methods">
+                <li class="contact-method">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h4>Phone</h4>
+                    <address>
+                        <a href="tel:011234567890">Phone 01: 123 456 7890</a>
+                        <a href="tel:023456789101">Phone 02: 345 678 9101</a>
+                    </address>
+                </li>
+                <li class="contact-method">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h4>Address</h4>
+                    <address>
+                        <p>6591 Orchard Street, Toronto, Ontario</p>
+                    </address>
+                </li>
+                <li class="contact-method">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h4>Email</h4>
+                    <address>
+                        <a href="mailto:contact@creative.com">Email: contact@creative.com</a>
+                        <a href="mailto:info@creative.com">Email: info@creative.com</a>
+                    </address>
+                </li>
+            </ul>
+        </section>
+<!-- contact form section -->
+        <section class="message-form wrapper">
+            <h3>Get in Touch with Us</h3>
+            <p>If you have any question, Please don't hesitate to send us a message</p>
+            <form action="#" method="#" class="contact-form" name="contact-form">
+                <fieldset class="name-subject">
+                    <label for="user-name" class="sr-only">Name</label>
+                    <input type="text" id="user-name" name="user-name" placeholder= "Enter your name..." required>
+                    <label for="user-eamil" class="sr-only">Email Address</label>
+                    <input type="email" id="user-email" name="user-email" placeholder="youremail@domain.com" required>
+                    <label for="user-subject" class="sr-only">Subject (Optional)</label>
+                    <input type="text" id="user-subject" name="user-subject" placeholder="Subject (Optional)">
+                </fieldset>
+                <fieldset class="text-box">
+                    <label for="message" class="sr-only">Leave your message</label>
+                    <textarea id="user-message" name="user-message" placeholder="Here goes your message" required></textarea>
+                </fieldset>
+                <button type="submit">Submit Message</button>
+            </form>
+        </section>
     </main>
 <!-- _footer section -->
 	<footer>
+        <section class="hero-img fullbleed">
+			<img src="./assets/contact-2.jpeg" alt="A Black Women with curly brown hair & white suit, smiling while talking on a cellphone.">
+		</section>
 		<section class="footer-main wrapper">
 			<div class="contact">
 				<a href="./contact.html">
 					<h4>Contact Us</h4>
 				</a>
 				<address>
-					<p>6591 Orchard Street, NY 100002, United States</p>
-					<a href="mailto:contact@onepro.co">Email: contact@onepro.co</a>
-					<a href="tel:0091233456789">Phone 01: +00 (9) 123-3456-789</a>
-					<a href="tel:0091233456788">Phone 01: +00 (9) 123-3456-788</a>
-					<a href="fax:0096435643989">Fax: +00 (9) 643 6543 989</a>
+					<p>6591 Orchard Street, Toronto, Ontario</p>
+					<a href="mailto:contact@creatice.com">Email: contact@creative.com</a>
+					<a href="tel:01123456789">Phone 01: 123 456 7890</a>
+					<a href="tel:023456789101">Phone 02: 435 678 9101</a>
+					<a href="fax:643654989">Fax: 643 6543 898</a>
 				</address>
 				<nav class="socials">
 					<a href="https://www.facebook.com" target=”_blank”>
@@ -95,7 +149,7 @@
 				</ul>
 			</div>
 			<div class="widget">
-				<h4>Twitter Widget</h4>
+				<h4>Subscribe Now</h4>
 				<form action="#" method="#"	class="form" name="form">
 					<p>Signup for emails and notifications below.</p>
 					</label>
