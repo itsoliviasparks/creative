@@ -3,7 +3,7 @@
 // top navigation bar
 header {
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     top: 0;
     right: 0;
     left: 0;
@@ -18,9 +18,7 @@ header .header-links {
     align-items: center;
 }
 
-header nav a {
-    padding: 10px;
-}
+header nav a { padding: 10px; }
 
 .header-links button {
     padding: 10px;
@@ -65,13 +63,9 @@ header nav a {
     }
 }
 
-input[type="checkbox"]:checked + label{
-    color: $grey;
-}
+input[type="checkbox"]:checked + label{ color: $grey; }
 
-nav.hamburger-nav {
-    display: none;
-}
+nav.hamburger-nav { display: none; }
 
 input[type="checkbox"]:checked ~ nav.hamburger-nav{
     position: fixed;

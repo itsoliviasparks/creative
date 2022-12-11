@@ -18,19 +18,18 @@
 .blog-path ul {
     display: flex;
     flex-direction: row;
-    li {
-        padding: 0 2px;
-    }
+    li { padding: 0 2px; }
 }
 
 .post-header {
-position: relative;
-width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin: 50px 0;
-padding: 0 0 15px 0;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0;
+    padding: 0 0 15px 0;
 }
 
 .author {
@@ -46,9 +45,7 @@ padding: 0 0 15px 0;
 .post-info {
     display: flex;
     justify-content: space-between;
-    li {
-        padding: 0 30px;
-    }
+    li { padding: 0 30px; }
 }
 
 .post-footer .socials {
@@ -57,9 +54,7 @@ padding: 0 0 15px 0;
     background-color: $white;
     ul {
         display: flex;
-        li {
-            padding: 0 10px;
-        }
+        li { padding: 0 10px; }
     }
 }
 
@@ -72,9 +67,7 @@ padding: 0 0 15px 0;
     justify-content: space-between;
     .post {
         width: 32%;
-        img {
-            width: 100%;
-        }
+        img { width: 100%; }
     }
 }
 
@@ -82,9 +75,7 @@ padding: 0 0 15px 0;
 section.comments {
     display: flex;
     flex-direction: column;
-    .comment-list {
-        width: 100%;
-    }
+    .comment-list { width: 100%; }
 }
 
 .comment-card {

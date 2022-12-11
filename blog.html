@@ -12,13 +12,14 @@
     <title>Creative: The Blog</title>
 </head>
 <body>
-<!-- _header-nav section -->
+<!-- header section: main & hamburger menus -->
 	<header>
-		<div class="wrapper">
-			<nav>
+		<!-- main-menu -->
+		<div class="main-menu wrapper">
+			<nav class="main-nav">
 				<a href="./index.html">Home</a>
 				<a href="./blog.html">Blog</a>
-				<a href="./index.html#portfolio">Portfolio</a>
+				<a href="#portfolio">Portfolio</a>
 			</nav>
 			<h1>Creative</h1>
 			<div class="header-links">
@@ -36,7 +37,48 @@
 					</div>
 				</a>
 			</div>
-		</div>
+		</div><!-- end main-menu -->
+
+		<!-- hamburger-menu -->
+		<div class="hamburger-menu">
+			<h1>Creative</h1>
+			<div class="icons">
+				<button class="search-icon">
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</button>
+				<a href="#" class="shopping-bag-icon">
+					<i class="fa-solid fa-bag-shopping"></i>
+					<div class="shopping-background">
+						<p class="shopping-count">2</p>
+					</div>
+				</a>
+				<div class="hamburger-toggle">
+					<input type="checkbox" id="hamburger-toggle" name="hamburger-toggle" class="sr-only">
+					<label for="hamburger-toggle" alt="Toggle for hamburger menu">
+						<i class="fa fa-bars"></i>
+					</label>
+					<nav class="hamburger-nav">
+						<ul>
+							<li>
+								<a href="./index.html">Home</a>
+							</li>
+							<li>
+								<a href="./blog.html">Blog</a>
+							</li>
+							<li>
+								<a href="#portfolio">Portfolio</a>
+							</li>
+							<li>
+								<a href="#">Shop</a>
+							</li>
+							<li>
+								<a href="./contact.html">Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div><!-- end hamburger-menu -->
 	</header>
 	<main>
 		<section class="hero-img fullbleed">

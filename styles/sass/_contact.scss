@@ -1,7 +1,7 @@
 @use "var" as *;
 
 //_contact page
-header.relative {
+.relative {
     position: relative;
     background-color: $white;
 }
@@ -12,7 +12,7 @@ section.hero-img {
     flex-direction: column;
     h2 {
         position: absolute;
-        z-index: 5;
+        z-index: 1;
         bottom: -30px;
         &::before {
             content: " ";
@@ -58,7 +58,5 @@ section.message-form {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 70px;
-    form {
-        margin-top: 70px;
-    }
+    form { margin-top: 70px; }
 }
