@@ -788,7 +788,7 @@ section.services {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 15vh 10vh;
+  padding-right: 70px;
   background-image: url("../././assets/home-4.jpeg");
   background-repeat: no-repeat;
   background-position: center;
@@ -893,7 +893,7 @@ section.our-team::before {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 15px 0;
-  padding: 10px 30px;
+  padding: 15px 30px;
 }
 
 .rectangle {
@@ -1333,7 +1333,8 @@ footer .widget {
   section {
     padding: 50px 0;
   }
-  section.hero-img.after::after {
+  section.hero-img.after::after,
+section.our-team::before {
     display: none;
   }
   section.branding-pros .wrapper {
@@ -1341,9 +1342,6 @@ footer .widget {
   }
   .services-offered {
     width: 70%;
-  }
-  section.our-team::before {
-    display: none;
   }
 }
 @media (max-width: 940px) {
@@ -1372,7 +1370,8 @@ address {
   section {
     padding: 30px 0;
   }
-  section.branding-pros .wrapper {
+  section.branding-pros .wrapper,
+.text-cards .cards {
     padding-top: 0;
   }
   .image-words .words {
@@ -1380,9 +1379,6 @@ address {
     width: auto;
     top: 25px;
     left: 25px;
-  }
-  .text-cards .card {
-    padding-bottom: 0;
   }
   section.testimonials .testimonial-card img {
     height: 150px;
@@ -1574,6 +1570,7 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 15px;
   }
   .related-posts {
     -webkit-box-orient: vertical;

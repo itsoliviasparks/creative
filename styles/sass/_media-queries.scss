@@ -2,23 +2,18 @@
 
 //small desktops
 @media (max-width: 1145px) {
+    //fonts-general styles
     section { padding: 50px 0; }
-    section.hero-img {
-        &.after::after {
-            display: none;
-        }
-    }
-    section.branding-pros {
-        .wrapper { padding-top: 100px; }
-    }
+    //home page
+    section.hero-img.after::after,
+    section.our-team::before { display: none; }
+    section.branding-pros .wrapper { padding-top: 100px; }
     .services-offered { width: 70%; }
-    section.our-team {
-        &::before { display: none;}
-    }
 }
 
 //portrait tablet
 @media (max-width: 940px) {
+    //fonts-general styles
     .wrapper { width: 85%; }
     h3 { font-size: 1.5rem; }
     h4,
@@ -36,35 +31,28 @@
 
 //landscape phone to portrait tablet
 @media (max-width: 768px) {
+     //fonts-general styles
     h2 { font-size: 2.7rem; }
     section { padding: 30px 0; }
-    section.branding-pros {
-        .wrapper { padding-top: 0; }
+    //home page
+    section.branding-pros .wrapper,
+    .text-cards .cards {
+        padding-top: 0;
     }
-    .image-words {
-        .words {
-            height: 150px;
-            width: auto;
-            top: 25px;
-            left: 25px;
-        }
+    .image-words .words {
+        height: 150px;
+        width: auto;
+        top: 25px;
+        left: 25px;
     }
-    .text-cards {
-        .card { padding-bottom: 0; }
-    }
-    section.testimonials {
-        .testimonial-card {
-            img {
-                height: 150px;
-                width: 150px;
-                margin: 0;
-            }
-        }
+    section.testimonials .testimonial-card img {
+        height: 150px;
+        width: 150px;
+        margin: 0;
     }
     .services-offered { width: 80%; }
-    .text{
-        p { width: 100%; }
-    }
+    .text p { width: 100%; }
+    //contact page
     .underline {
         padding-bottom: 5px;
         margin-bottom: 15px;
@@ -120,12 +108,10 @@
     .contact-methods {
         flex-direction: column;
         margin: 70px auto 0 auto;
-        li {
-            &:nth-child(2){
-                border: none;
-                border-top: solid 1px $grey;
-                border-bottom: solid 1px $grey;
-            }
+        li:nth-child(2){
+            border: none;
+            border-top: solid 1px $grey;
+            border-bottom: solid 1px $grey;
         }
     }
     //form styling
@@ -142,7 +128,9 @@
         flex-direction: column;
         .contact,
         .blog-links,
-        .widget { width: 100%; }
+        .widget {
+            width: 100%;
+        }
     }
     .contact,
     .blog-links,
@@ -159,8 +147,8 @@
 
 //min width
 @media (max-width: 320px) {
+    //fonts-general styles
     .wrapper { width: 90%; }
-    //fonts
     h2 { font-size: 1.6rem; }
     h3 { font-size: 1.2rem; }
     h4,
@@ -171,17 +159,13 @@
         font-size: 1rem;
     }
     //home page
-    .image-words {
-    .words {
+    .image-words .words {
         top: 10px;
         left: 10px;
     }
-    }
-    .text-cards {
-        .card {
-            padding-right: 0;
-            padding-left: 0;
-        }
+    .text-cards .card {
+        padding-right: 0;
+        padding-left: 0;
     }
     section.services { padding: 0; }
     //blog page
@@ -191,6 +175,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-bottom: 15px;
         }
     }
     .related-posts {
@@ -202,9 +187,6 @@
     }
     .comment-card .comment .name {
         flex-direction: column;
-        button {
-            text-align: left;
-        }
-
+        button { text-align: left; }
     }
 }
