@@ -471,6 +471,7 @@ i {
   font-size: 3rem;
 }
 
+label i,
 .circle i {
   font-size: 2.2rem;
 }
@@ -478,6 +479,8 @@ i {
 .search-icon,
 .shopping-bag-icon,
 .socials i {
+  padding: 0;
+  background-color: transparent;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -487,6 +490,7 @@ i {
 .socials i:hover,
 .socials i:focus {
   color: #C3DAB7;
+  background-color: transparent;
 }
 .search-icon p,
 .shopping-bag-icon p,
@@ -616,18 +620,14 @@ button[type=submit].widget:hover i, button[type=submit].widget:focus i {
 
 header {
   position: absolute;
+  z-index: 10;
   top: 0;
   right: 0;
   left: 0;
 }
 
-header,
-header .wrapper {
-  z-index: 1;
-}
-
-.wrapper,
-header nav,
+.main-menu,
+nav.main-nav,
 header .header-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -673,6 +673,67 @@ header nav a {
   border-radius: 50%;
 }
 
+.hamburger-menu {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 30px;
+  background-color: #F6F6F6;
+}
+.hamburger-menu .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hamburger-menu .icons .hamburger-toggle i {
+  padding: 10px;
+}
+
+input[type=checkbox]:checked + label {
+  color: rgba(51, 51, 51, 0.5019607843);
+}
+
+nav.hamburger-nav {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ nav.hamburger-nav {
+  position: fixed;
+  top: 62px;
+  right: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+input[type=checkbox]:checked ~ nav.hamburger-nav ul {
+  width: 100%;
+  background-color: #F6F6F6;
+}
+input[type=checkbox]:checked ~ nav.hamburger-nav li {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+input[type=checkbox]:checked ~ nav.hamburger-nav li:hover, input[type=checkbox]:checked ~ nav.hamburger-nav li:focus {
+  background-color: #C3DAB7;
+}
+input[type=checkbox]:checked ~ nav.hamburger-nav a {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
 section.hero-img {
   position: relative;
   width: 100%;
@@ -710,10 +771,10 @@ section.branding-pros .wrapper {
 
 .image-words {
   position: relative;
+  margin: 0 auto;
 }
 .image-words .words {
   position: absolute;
-  z-index: 0;
   top: -90px;
   left: -105px;
 }
@@ -850,6 +911,9 @@ section.our-team {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 section.our-team::before {
   content: " ";
@@ -978,7 +1042,7 @@ section.portfolio img {
 
 .post-header {
   position: relative;
-  width: 100%;
+  z-index: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -988,6 +1052,7 @@ section.portfolio img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   margin: 50px 0;
   padding: 0 0 15px 0;
 }
@@ -1129,7 +1194,7 @@ section.comment-form {
   margin-bottom: 70px;
 }
 
-header.relative {
+.relative {
   position: relative;
   background-color: #FFFFFF;
 }
@@ -1146,7 +1211,7 @@ section.hero-img {
 }
 section.hero-img h2 {
   position: absolute;
-  z-index: 5;
+  z-index: 1;
   bottom: -30px;
 }
 section.hero-img h2::before {
@@ -1228,6 +1293,9 @@ footer {
   background-color: #333333;
 }
 footer .footer-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1364,11 +1432,20 @@ address {
   }
 }
 @media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
   h2 {
     font-size: 2.7rem;
   }
   section {
     padding: 30px 0;
+  }
+  .main-menu {
+    visibility: hidden;
+  }
+  .hamburger-menu {
+    visibility: visible;
   }
   section.branding-pros .wrapper,
 .text-cards .cards {

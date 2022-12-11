@@ -6,7 +6,9 @@
     section { padding: 50px 0; }
     //home page
     section.hero-img.after::after,
-    section.our-team::before { display: none; }
+    section.our-team::before {
+        display: none;
+    }
     section.branding-pros .wrapper { padding-top: 100px; }
     .services-offered { width: 70%; }
 }
@@ -32,8 +34,12 @@
 //landscape phone to portrait tablet
 @media (max-width: 768px) {
      //fonts-general styles
+    h1 { font-size: 2.5rem; }
     h2 { font-size: 2.7rem; }
     section { padding: 30px 0; }
+    //changing to hamburger menu
+    .main-menu { visibility: hidden; }
+    .hamburger-menu { visibility: visible; }
     //home page
     section.branding-pros .wrapper,
     .text-cards .cards {
@@ -96,7 +102,9 @@
         flex-direction: column;
         img { height: 150px; }
         .text,
-        img { width: 100%; }
+        img {
+            width: 100%;
+        }
     }
     .text{ padding: 30px 0; }
     //blog page

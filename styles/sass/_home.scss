@@ -13,9 +13,9 @@ section.branding-pros {
 
 .image-words {
     position: relative;
+    margin: 0 auto;
     .words {
         position: absolute;
-        z-index: 0;
         top: -90px;
         left: -105px;
     }
@@ -57,7 +57,7 @@ section.testimonials {
         i:hover,
         i:focus {
             opacity: 0.5;
-            }
+        }
     }
 }
 
@@ -105,6 +105,7 @@ section.our-team {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
     &::before {
         content: " ";
         position: absolute;

@@ -225,15 +225,21 @@ i { font-size: 1.4rem; }
     font-size: 3rem;
 }
 
-.circle i { font-size: 2.2rem; }
+label i,
+.circle i {
+    font-size: 2.2rem;
+}
 
 .search-icon,
 .shopping-bag-icon,
 .socials i {
+    padding: 0;
+    background-color: transparent;
     transition: 0.3s;
     &:hover,
     &:focus {
         color: $light-sage;
+        background-color: transparent;
     }
     p {
         font-size: 0.8rem;
@@ -346,8 +352,6 @@ button[type=submit].widget {
     &:hover,
     &:focus {
         background-color: $light-sage;
-        i {
-            color: $grey
-            }
-        }
+        i { color: $grey; }
+    }
 }
