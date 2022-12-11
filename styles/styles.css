@@ -1442,7 +1442,7 @@ address {
     padding: 30px 0;
   }
   .main-menu {
-    visibility: hidden;
+    display: none;
   }
   .hamburger-menu {
     visibility: visible;
@@ -1505,7 +1505,7 @@ address {
     width: 100%;
   }
   section.services {
-    padding: 15px 5vh;
+    padding: 15px;
   }
   .services-offered {
     width: 100%;
