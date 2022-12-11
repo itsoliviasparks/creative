@@ -32,8 +32,100 @@
 //landscape phone to portrait tablet
 @media (max-width: 768px) {
      //fonts-general styles
+    h1 { font-size: 2.5rem; }
     h2 { font-size: 2.7rem; }
     section { padding: 30px 0; }
+    //hamburger menu
+    .main-menu {
+        visibility: hidden;
+    }
+    .hamburger-menu {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+        background-color: $off-white;
+        .icons {
+            display: flex;
+            align-items: center;
+            .hamburger-toggle i {
+                padding: 10px;
+                border: solid 1px green;
+            }
+        }
+    }
+    nav.hamburger-nav {
+        display: none;
+    }
+
+    input[type="checkbox"]:checked + label{
+        color: $grey;
+    }
+
+    input[type="checkbox"]:checked ~ nav{
+        position: fixed;
+        top: 62px;
+        right: 0;
+        left: 0;
+        display: flex;
+        ul {
+            width: 100%;
+            background-color: $off-white;
+        }
+        li:hover,
+        li:focus {
+            background-color: $light-sage;
+        }
+        a {
+            display: block;
+            margin: auto;
+            text-align: center;
+        }
+    }
+
+
+
+
+
+    // header .wrapper {
+    //     visibility: hidden;
+    // }
+    // label[for="hamburger-toggle"] {
+    //     top: 0;
+    //     right: 0;
+    //     left: 0;
+    //     z-index: 10;
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     padding: 0px 30px;
+    //     // background-color: $off-white;
+    //     i { padding: 15px; border: solid 1px green;}
+    // }
+    // input[type="checkbox"]:checked + label {
+    //     color: hotpink;
+    // }
+    // input[type="checkbox"]:checked {
+    //     header .wrapper {
+    //         visibility: visible;
+    //     }
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
     //home page
     section.branding-pros .wrapper,
     .text-cards .cards {

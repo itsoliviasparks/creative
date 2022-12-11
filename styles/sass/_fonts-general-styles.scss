@@ -225,15 +225,20 @@ i { font-size: 1.4rem; }
     font-size: 3rem;
 }
 
-.circle i { font-size: 2.2rem; }
+label i,
+.circle i {
+    font-size: 2.2rem;
+}
 
 .search-icon,
 .shopping-bag-icon,
 .socials i {
+    padding: 0;
     transition: 0.3s;
     &:hover,
     &:focus {
         color: $light-sage;
+        background-color: transparent;
     }
     p {
         font-size: 0.8rem;
