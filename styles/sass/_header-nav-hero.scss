@@ -1,6 +1,7 @@
 @use "var" as *;
 
 // top navigation bar
+////main-menu
 header {
     position: absolute;
     top: 0;
@@ -49,6 +50,55 @@ header nav a {
         align-items: center;
         background-color: $light-sage;
         border-radius: 50%;
+    }
+}
+
+////hamburger-menu
+.hamburger-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    background-color: $off-white;
+    .icons {
+        display: flex;
+        align-items: center;
+        .hamburger-toggle i {
+            padding: 10px;
+        }
+    }
+}
+
+input[type="checkbox"]:checked + label{
+    color: $grey;
+}
+
+nav.hamburger-nav {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ nav.hamburger-nav{
+    position: fixed;
+    top: 62px;
+    right: 0;
+    left: 0;
+    display: flex;
+    ul {
+        width: 100%;
+        background-color: $off-white;
+    }
+    li:hover,
+    li:focus {
+        background-color: $light-sage;
+    }
+    a {
+        display: block;
+        margin: auto;
+        text-align: center;
     }
 }
 

@@ -480,6 +480,7 @@ label i,
 .shopping-bag-icon,
 .socials i {
   padding: 0;
+  background-color: transparent;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -678,6 +679,64 @@ header nav a {
           align-items: center;
   background-color: #C3DAB7;
   border-radius: 50%;
+}
+
+.hamburger-menu {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 30px;
+  background-color: #F6F6F6;
+}
+.hamburger-menu .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hamburger-menu .icons .hamburger-toggle i {
+  padding: 10px;
+}
+
+input[type=checkbox]:checked + label {
+  color: rgba(51, 51, 51, 0.5019607843);
+}
+
+nav.hamburger-nav {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ nav.hamburger-nav {
+  position: fixed;
+  top: 62px;
+  right: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+input[type=checkbox]:checked ~ nav.hamburger-nav ul {
+  width: 100%;
+  background-color: #F6F6F6;
+}
+input[type=checkbox]:checked ~ nav.hamburger-nav li:hover,
+input[type=checkbox]:checked ~ nav.hamburger-nav li:focus {
+  background-color: #C3DAB7;
+}
+input[type=checkbox]:checked ~ nav.hamburger-nav a {
+  display: block;
+  margin: auto;
+  text-align: center;
 }
 
 section.hero-img {
@@ -1385,58 +1444,6 @@ address {
   }
   .hamburger-menu {
     visibility: visible;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 0 30px;
-    background-color: #F6F6F6;
-  }
-  .hamburger-menu .icons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .hamburger-menu .icons .hamburger-toggle i {
-    padding: 10px;
-    border: solid 1px green;
-  }
-  nav.hamburger-nav {
-    display: none;
-  }
-  input[type=checkbox]:checked + label {
-    color: rgba(51, 51, 51, 0.5019607843);
-  }
-  input[type=checkbox]:checked ~ nav {
-    position: fixed;
-    top: 62px;
-    right: 0;
-    left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  input[type=checkbox]:checked ~ nav ul {
-    width: 100%;
-    background-color: #F6F6F6;
-  }
-  input[type=checkbox]:checked ~ nav li:hover,
-input[type=checkbox]:checked ~ nav li:focus {
-    background-color: #C3DAB7;
-  }
-  input[type=checkbox]:checked ~ nav a {
-    display: block;
-    margin: auto;
-    text-align: center;
   }
   section.branding-pros .wrapper,
 .text-cards .cards {
