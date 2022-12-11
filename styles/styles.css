@@ -235,6 +235,15 @@ html {
   width: 70%;
   max-width: 1200px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section {
@@ -620,22 +629,14 @@ button[type=submit].widget:hover i, button[type=submit].widget:focus i {
 
 header {
   position: absolute;
+  z-index: 1;
   top: 0;
   right: 0;
   left: 0;
 }
 
-.hamburger-menu {
-  visibility: hidden;
-}
-
-header,
-header .wrapper {
-  z-index: 1;
-}
-
-.wrapper,
-header nav,
+.main-menu,
+nav.main-nav,
 header .header-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -729,8 +730,11 @@ input[type=checkbox]:checked ~ nav.hamburger-nav ul {
   width: 100%;
   background-color: #F6F6F6;
 }
-input[type=checkbox]:checked ~ nav.hamburger-nav li:hover,
-input[type=checkbox]:checked ~ nav.hamburger-nav li:focus {
+input[type=checkbox]:checked ~ nav.hamburger-nav li {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+input[type=checkbox]:checked ~ nav.hamburger-nav li:hover, input[type=checkbox]:checked ~ nav.hamburger-nav li:focus {
   background-color: #C3DAB7;
 }
 input[type=checkbox]:checked ~ nav.hamburger-nav a {

@@ -1,25 +1,17 @@
 @use "var" as *;
 
 // top navigation bar
-////main-menu
 header {
     position: absolute;
+    z-index: 1;
     top: 0;
     right: 0;
     left: 0;
 }
 
-.hamburger-menu {
-    visibility: hidden;
-}
-
-header,
-header .wrapper {
-    z-index: 1;
-}
-
-.wrapper,
-header nav,
+////main-menu
+.main-menu,
+nav.main-nav,
 header .header-links {
     display: flex;
     justify-content: space-between;
@@ -91,9 +83,12 @@ input[type="checkbox"]:checked ~ nav.hamburger-nav{
         width: 100%;
         background-color: $off-white;
     }
-    li:hover,
-    li:focus {
-        background-color: $light-sage;
+    li {
+        transition: 0.3s;
+        &:hover,
+        &:focus {
+            background-color: $light-sage;
+        }
     }
     a {
         display: block;
