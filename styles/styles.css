@@ -1447,6 +1447,9 @@ address {
   .hamburger-menu {
     visibility: visible;
   }
+  .hero-img {
+    margin-top: 62px;
+  }
   section.branding-pros .wrapper,
 .text-cards .cards {
     padding-top: 0;
