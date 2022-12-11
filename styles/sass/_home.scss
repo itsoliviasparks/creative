@@ -65,7 +65,7 @@ section.testimonials {
 section.services {
     display: flex;
     justify-content: flex-end;
-    padding: 15vh 10vh;
+    padding-right: 70px;
     background-image: url("../././assets/home-4.jpeg");
     background-repeat: no-repeat;
     background-position: center; 
@@ -96,6 +96,7 @@ section.services {
         flex-direction: column;
         justify-items: center;
         align-items: flex-start;
+        margin-right: 15px;
     }
 }
 
@@ -137,7 +138,7 @@ section.our-team {
     display: flex;
     flex-direction: column;
     margin: 15px 0;
-    padding: 10px 30px;
+    padding: 15px 30px;
 }
 
 .rectangle {

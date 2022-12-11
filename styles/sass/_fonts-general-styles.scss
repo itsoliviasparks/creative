@@ -8,12 +8,11 @@ html {
 
 .wrapper {
     width: 70%;
-    max-width: 1800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 section {
-    min-height: 55vh;
     padding: 70px 0;
     &.fullbleed {
         min-height: auto;
@@ -324,6 +323,7 @@ button[type=submit] {
     color: $grey;
     border-bottom: 1px solid $grey;
     font-weight: 300;
+    transition: 0.3s;
     &:hover,
     &:focus {
         color: $black;
