@@ -1,0 +1,210 @@
+@use "var" as *;
+
+//small desktops
+@media (max-width: 1145px) {
+    section { padding: 50px 0; }
+    section.hero-img {
+        &.after::after {
+            display: none;
+        }
+    }
+    section.branding-pros {
+        .wrapper { padding-top: 100px; }
+    }
+    .services-offered { width: 70%; }
+    section.our-team {
+        &::before { display: none;}
+    }
+}
+
+//portrait tablet
+@media (max-width: 940px) {
+    .wrapper { width: 85%; }
+    h3 { font-size: 1.5rem; }
+    h4,
+    p,
+    input,
+    textarea {
+        font-size: 1.2rem;
+    }
+    footer p,
+    footer a,
+    address {
+        font-size: 1rem;
+    }
+}
+
+//landscape phone to portrait tablet
+@media (max-width: 768px) {
+    h2 { font-size: 2.7rem; }
+    section { padding: 30px 0; }
+    section.branding-pros {
+        .wrapper { padding-top: 0; }
+    }
+    .image-words {
+        .words {
+            height: 150px;
+            width: auto;
+            top: 25px;
+            left: 25px;
+        }
+    }
+    .text-cards {
+        .card { padding-bottom: 0; }
+    }
+    section.testimonials {
+        .testimonial-card {
+            img {
+                height: 150px;
+                width: 150px;
+                margin: 0;
+            }
+        }
+    }
+    .services-offered { width: 80%; }
+    .text{
+        p { width: 100%; }
+    }
+    .underline {
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+    }
+    .contact-methods {
+        margin: 30px auto 0 auto;
+        li { padding: 15px 30px; }
+    }
+}
+
+//landscape phones and down
+@media (max-width: 480px) {
+    h4 { margin: 10px 0 0 0; }
+    //home page
+    .service-text p { color: $black; }
+    .image-words {
+        width: 90%;
+        .words { height: 100px; }
+        img { width: 100%; }
+    }
+    .text-cards {
+        flex-direction: column;
+        .card { width: 100%; }
+    }
+    section.services { padding: 15px 5vh; }
+    .services-offered { width: 100%; }
+    .service {
+        width: 100%;
+        margin: 12px 0;
+    }
+    .team-cards {
+        padding-top: 15px;
+        .card {
+            width: 49%;
+            margin: 5px 0;
+        }
+        .rectangle { width: 100%; }
+    }
+    .text-card { margin: 5px 0;}
+    section.portfolio {
+        flex-direction: column;
+        img { height: 150px; }
+        .text,
+        img { width: 100%; }
+    }
+    .text{ padding: 30px 0; }
+    //blog page
+    .post-header {
+        flex-direction: column;
+        margin: 0;
+        }
+    //contact page
+    .contact-methods {
+        flex-direction: column;
+        margin: 70px auto 0 auto;
+        li {
+            &:nth-child(2){
+                border: none;
+                border-top: solid 1px $grey;
+                border-bottom: solid 1px $grey;
+            }
+        }
+    }
+    //form styling
+    fieldset.name-subject { padding: 0; }
+    .name-subject {
+        flex-direction: column;
+        input {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+     //footer
+     .footer-main {
+        flex-direction: column;
+        .contact,
+        .blog-links,
+        .widget { width: 100%; }
+    }
+    .contact,
+    .blog-links,
+    .widget {
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .contact address,
+    .widget form p {
+            align-items: center;
+            text-align: center;
+        }
+}
+
+//min width
+@media (max-width: 320px) {
+    .wrapper { width: 90%; }
+    //fonts
+    h2 { font-size: 1.6rem; }
+    h3 { font-size: 1.2rem; }
+    h4,
+    p,
+    input,
+    textarea,
+    button {
+        font-size: 1rem;
+    }
+    //home page
+    .image-words {
+    .words {
+        top: 10px;
+        left: 10px;
+    }
+    }
+    .text-cards {
+        .card {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+    section.services { padding: 0; }
+    //blog page
+    .post-info {
+        flex-direction: column;
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .related-posts {
+        flex-direction: column;
+        .post {
+            width: 70%;
+            margin: 0 auto 30px auto;
+        }
+    }
+    .comment-card .comment .name {
+        flex-direction: column;
+        button {
+            text-align: left;
+        }
+
+    }
+}
