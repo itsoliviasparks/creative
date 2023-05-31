@@ -1,5 +1,5 @@
 # Creative 🖌️
-<a href="https://itsoliviasparks-creative.netlify.app">Live Site</a>
+<a href="https://itsoliviasparks-creative.netlify.app">🔗 Live Site</a>
 
 ## Project Purpose & Goal
 Creative is an exercise in taking a given design deck (located in `given-design-deck`) and translating it into HTML & CSS using Sass. Note that many links are dead. A fully functional website was not the focus of this project, instead, my focus was on creating a pixel-perfect replication of the design deck.
